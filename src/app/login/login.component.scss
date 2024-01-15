@@ -1,0 +1,158 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.entire {
+    display: flex;
+}
+
+.ong-some-sale {
+    width: 600px;
+    margin: 10px 120px;
+}
+
+.loginpage {
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+form, .register-section {
+    margin: 15px 120px 10px 0px;
+    background-color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+
+form {
+    display: inline-block;
+}
+
+.register-section {
+    display: block;
+}
+
+.credentials {
+    width: 295px;
+    font-size: 15px;
+    display: block;
+    margin: 25px 0px;
+    height: 38px;
+    padding-left: 13px;
+    border-radius: 6px;
+    border: 1.5px solid #dedede;
+}
+
+.credentials::placeholder {
+    color: #9d9d9d;
+    font-family: "Coda";
+}
+
+.login-button {
+    padding: 13px 42px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3fc5c0;
+    color: white;
+    margin: 7px 30px 15px 0px;
+    font-family: "Basic";
+}
+
+.forgot-pw:link {
+    font-size: 13px;
+    color: #9d9d9d;
+    text-decoration: none;
+    font-family: "Basic";
+}
+
+.forgot-pw:hover {
+    text-decoration: underline;
+}
+
+.forgot-pw:visited {
+    color: #9d9d9d;
+}
+
+.title {
+    font-size: 25px;
+    font-family: "Basic";
+}
+
+.or-login-with {
+    font-size: 13px;
+    color: #9d9d9d;
+    margin: 15px 0px;
+    font-family: "Coda";
+}
+
+.facebook-button, .google-button {
+    flex-basis: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Basic";
+}
+
+.social-media-btn {
+    width: 311px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.facebook-button {
+    margin-right: 15px;
+    background-color: #395796;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+.google-button {
+    background-color: #3b82ef;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+.fb-logo, .google-logo {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.hide-and-reveal-pw {
+    position: absolute;
+    top: 9px;
+    right: 13px;
+    cursor: pointer;
+}
+
+.pw {
+    position: relative;
+}
+
+.subtitle {
+    width: 313px;
+    font-family: "Basic";
+    font-size: 16px;
+}
+
+.enjoy-text {
+    color: #CE1C75;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.register-button {
+    background-color: #CE1C75;
+    padding: 13px 25px;
+    font-family: "Basic";
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+}

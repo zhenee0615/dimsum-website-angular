@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
-import { LoginModule } from './login/login.module';
-
+import { RouterModule } from '@angular/router';
 @Component({
   standalone: true,
   selector: 'app-root',

@@ -10,8 +10,10 @@ import { Component } from '@angular/core';
 })
 
 export class FooterComponent {
-  iconSrc = ["assets/Images/fb_icon.png", 
-            "assets/Images/insta_icon.png", 
-            "assets/Images/whatsapp_icon.png", 
-            "assets/Images/youtube_icon.png"];
+  iconSrc = [
+    "assets/Images/fb_icon.png", 
+    "assets/Images/insta_icon.png", 
+    "assets/Images/whatsapp_icon.png", 
+    "assets/Images/youtube_icon.png"
+  ];
 }

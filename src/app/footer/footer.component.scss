@@ -1,0 +1,75 @@
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    height: 270px;
+    display: flex;
+    position: relative;
+    border-top: 4px solid #5CC0A2;
+}
+
+.footer-left-section {
+    height: 100%;
+    width: 455px;
+}
+
+.company-footer-logo {
+    margin: 30px 0 0 95px;
+    height: 40px;
+}
+
+.copyright {
+    font-family: 'Coda';
+    font-size: 13px;
+    margin-left: 95px;
+}
+
+.contact {
+    font-family: 'Basic';
+    font-size: 15px;
+    margin: 50px 0 0 95px;
+}
+
+.social-media {
+    margin: 15px 0 0 95px;
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    align-content: space-between;
+    margin-right: 80px;
+    background-color: white;
+}
+
+.footer-section p {
+    font-family: "Basic";
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Coda';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-right-section {
+    justify-content: space-between;
+    width: 715px;
+    display: flex;
+    margin-top: 12px;
+}

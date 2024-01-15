@@ -1,0 +1,31 @@
+<footer>
+    <div class="footer-left-section">
+        <img src="assets/Images/logo.png" class="company-footer-logo">
+        <p class="copyright">&#169; Copyright 2022 XINN HOLDINGS SDN. BHD.</p> 
+        <p class="contact">Look For Us On</p>
+        <div class=social-media>
+            <ng-container *ngFor="let links of iconSrc">
+                <img [src]="links" class="icon">
+            </ng-container>
+        </div>
+    </div>
+    <div class="footer-right-section">
+        <nav class="footer-section">
+            <p>Xinn Holdings</p>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <nav class="footer-section">
+            <p>Information</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Delivery Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </nav>
+        <nav class="footer-section">
+            <p>My Account</p>
+            <a href="#">View Account</a>
+            <a href="#">Order History</a>
+        </nav>
+    </div>
+</footer>

@@ -7,10 +7,9 @@ html, body {
 
 .entire {
     display: flex;
-    
 }
 
-.ongSomeSale {
+.ong-some-sale {
     width: 600px;
     margin: 10px 120px;
 }
@@ -20,7 +19,7 @@ html, body {
     margin-right: 20px;
 }
 
-form, .registerSection {
+form, .register-section {
     margin: 15px 120px 10px 0px;
     background-color: white;
     padding: 10px 35px;
@@ -31,7 +30,7 @@ form {
     display: inline-block;
 }
 
-.registerSection {
+.register-section {
     display: block;
 }
 
@@ -51,7 +50,7 @@ form {
     font-family: "Coda";
 }
 
-.loginButton {
+.login-button {
     padding: 13px 42px;
     font-size: 13px;
     border: none;
@@ -62,18 +61,18 @@ form {
     font-family: "Basic";
 }
 
-.forgotPW:link {
+.forgot-pw:link {
     font-size: 13px;
     color: #9d9d9d;
     text-decoration: none;
     font-family: "Basic";
 }
 
-.forgotPW:hover {
+.forgot-pw:hover {
     text-decoration: underline;
 }
 
-.forgotPW:visited {
+.forgot-pw:visited {
     color: #9d9d9d;
 }
 
@@ -82,14 +81,14 @@ form {
     font-family: "Basic";
 }
 
-.orLoginWith {
+.or-login-with {
     font-size: 13px;
     color: #9d9d9d;
     margin: 15px 0px;
     font-family: "Coda";
 }
 
-.facebookButton, .googleButton {
+.facebook-button, .google-button {
     flex-basis: 100%;
     display: inline-flex;
     justify-content: center;
@@ -97,14 +96,14 @@ form {
     font-family: "Basic";
 }
 
-.socialMediaBtn {
+.social-media-btn {
     width: 311px;
     height: 40px;
     display: flex;
     margin-bottom: 25px;
 }
 
-.facebookButton {
+.facebook-button {
     margin-right: 15px;
     background-color: #395796;
     border: none;
@@ -112,26 +111,26 @@ form {
     color: white;
 }
 
-.googleButton {
+.google-button {
     background-color: #3b82ef;
     border: none;
     border-radius: 2px;
     color: white;
 }
 
-.FbLogo, .GoogleLogo {
+.fb-logo, .google-logo {
     width: 20px;
     margin-right: 10px;
 }
 
-.HideAndRevealPW {
+.hide-and-reveal-pw {
     position: absolute;
     top: 9px;
     right: 13px;
     cursor: pointer;
 }
 
-.PW {
+.pw {
     position: relative;
 }
 
@@ -141,13 +140,13 @@ form {
     font-size: 16px;
 }
 
-.enjoyText {
+.enjoy-text {
     color: #CE1C75;
     font-size: 24px;
     font-weight: bold;
 }
 
-.registerButton {
+.register-button {
     background-color: #CE1C75;
     padding: 13px 25px;
     font-family: "Basic";

@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
+
 export class LoginComponent {
   images = ["/assets/Images/password_hide.png", "/assets/Images/password_reveal.png"];
   image = this.images[0];

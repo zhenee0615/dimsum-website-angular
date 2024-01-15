@@ -8,12 +8,12 @@ footer {
     border-top: 4px solid #5CC0A2;
 }
 
-.footerLeftSec {
+.footer-left-section {
     height: 100%;
     width: 455px;
 }
 
-.companyFooterLogo {
+.company-footer-logo {
     margin: 30px 0 0 95px;
     height: 40px;
 }
@@ -30,19 +30,19 @@ footer {
     margin: 50px 0 0 95px;
 }
 
-.socialMedia {
+.social-media {
     margin: 15px 0 0 95px;
     display: flex;
     justify-content: space-between;
     width: 125px;
 }
 
-.facebookIcon, .instagramIcon, .whatsappIcon, .youtubeIcon {
+.icon {
     width: 24px;
     height: 24px;
 }
 
-.footerSection {
+.footer-section {
     display: flex;
     list-style-type: none;
     flex-direction: column;
@@ -53,13 +53,13 @@ footer {
     background-color: white;
 }
 
-.footerSection p {
+.footer-section p {
     font-family: "Basic";
     font-size: 16px;
     margin-bottom: 25px;
 }
 
-.footerSection a {
+.footer-section a {
     text-decoration: none;
     color: black;
     font-family: 'Coda';
@@ -67,9 +67,9 @@ footer {
     margin-bottom: 15px;
 }
 
-.footerRightSec {
+.footer-right-section {
     justify-content: space-between;
-    width: 815px;
+    width: 715px;
     display: flex;
     margin-top: 12px;
 }

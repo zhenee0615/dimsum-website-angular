@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { config } from '../constant';
 import { SwiperModule } from 'swiper/angular';
 import SwiperCore, { SwiperOptions, Autoplay, Navigation, Pagination} from 'swiper';
 
@@ -20,16 +21,5 @@ export class HomeComponent {
     { id: 3, path: "assets/Images/freeshipping.png" }
   ]
 
-  config: SwiperOptions = {
-    slidesPerView: 1,
-    navigation: false,
-    autoplay: { delay: 1500, disableOnInteraction: false },
-    pagination: { 
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-      type: 'bullets',
-    }, 
-    loop: true
-  };
+  config: SwiperOptions = config;
 }

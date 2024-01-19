@@ -1,0 +1,8 @@
+<div class="banner">
+    <swiper [config]="config">
+        <ng-template swiperSlide *ngFor="let image of images;">
+            <img class="image" [src]="image.path">
+        </ng-template>
+    </swiper>
+    <div class="swiper-pagination"></div>
+</div>

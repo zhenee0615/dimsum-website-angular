@@ -1,0 +1,30 @@
+swiper {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #b91217;
+}
+
+.image {
+    display: block;
+    height: 400px;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    height: 30px;
+    width: 70px;
+    display: block;
+    margin-bottom: 150px;
+}
+
+.banner {
+    vertical-align: top;
+    display: flex;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+}

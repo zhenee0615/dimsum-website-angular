@@ -1,3 +1,25 @@
+@import 'swiper/scss';
+@import 'swiper/css/pagination';
+
 html, body {
     margin: 0px;
 }
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+}
+

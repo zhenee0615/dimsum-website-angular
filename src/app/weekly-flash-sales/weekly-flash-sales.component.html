@@ -1,0 +1,23 @@
+<div class="product-list-container">
+    <div class="product-list-title">
+        <hr><span></span>
+        <p>Weekly Flash Sales</p>
+        <span></span><hr>
+    </div>
+    <button type="submit">See All ></button>
+</div>
+<div class="product-list-info">
+    <button class="swiper-button-prev">&lt;</button>
+    <swiper class="weekly-sale-swiper" [config]="weeklySalesSwiper">
+        <ng-template swiperSlide *ngFor="let weeklySalesImage of weeklyFlashSaleImages;">
+            <img class="weekly-sales-image" [src]="weeklySalesImage.path">
+            <p class="product-name">{{weeklySalesImage.name}}</p>
+            <p class="product-price">RM{{weeklySalesImage.price}}</p>
+            <p class="product-discount">
+                RM{{weeklySalesImage.price - (weeklySalesImage.price * weeklySalesImage.discount)}}
+                <span class="discount-percent">{{weeklySalesImage.discount * 100}}%</span>
+            </p>
+        </ng-template>
+    </swiper>
+    <button class="swiper-button-next">></button>
+</div>

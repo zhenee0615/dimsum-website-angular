@@ -49,3 +49,23 @@ html, body {
     justify-items: center;
     text-align: center;
 }
+
+.mat-mdc-tab-label-container {
+    border-bottom-style: none !important;
+}
+
+.mdc-tab {
+    font-size: 1.12rem !important;
+    font-family: 'Basic' !important;
+    width: 151px !important;
+    height: 54px !important;
+    border-radius: 35px;
+}
+
+.mdc-tab--active {
+    background-color: #C6EBE0 !important;
+}
+
+.mat-mdc-tab-body {
+    margin-top: 1.2rem;
+}

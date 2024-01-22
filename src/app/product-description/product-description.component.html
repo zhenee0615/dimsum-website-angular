@@ -1,1 +1,56 @@
-<p>product-description works!</p>
+<div class="mat-tab-container">
+    <mat-tab-group 
+        dynamicHeight
+        mat-stretch-tabs="false" 
+        mat-align-tabs="center" 
+        animationDuration="1500"
+    >
+        <mat-tab label="Description">
+            <ng-container 
+                *ngFor="let weeklyFlashSale of weeklyFlashSaleImages[id - 1].description; 
+                let i = index"
+            >
+                <p class="product-details">{{weeklyFlashSale.title}}</p>
+                <p class="product-details">
+                    {{weeklyFlashSale.desc}}
+                </p>
+                <hr *ngIf="i !== weeklyFlashSaleImages[id - 1].description.length - 1" class="description-separation-line">
+            </ng-container>
+        </mat-tab>
+        <mat-tab label="Recipes">
+            <div class="recipe-container">
+                <ng-container 
+                    *ngFor="let weeklyFlashSale of weeklyFlashSaleImages[id - 1].recipes; 
+                    let i = index"
+                >
+                    <div>
+                        <img [src]="weeklyFlashSale.path" class="recipe-pic">
+                        <p class="recipe-name">{{weeklyFlashSale.name}}</p>
+                    </div>
+                </ng-container>
+            </div>
+        </mat-tab>
+        <mat-tab label="Nutritional Value">
+            <div class="nutrition-container">
+                <div class="nutrition-header">
+                    <p class="calories">{{weeklyFlashSaleImages[id -1].caloriesPerServings}} kcal for each serving size</p>
+                    <p class="each-serving">For each serving size</p>
+                </div>
+                <div class="nutrition-details-container">
+                    <ng-container 
+                        *ngFor="let weeklyFlashSale of weeklyFlashSaleImages[id - 1].nutritionalValue; 
+                        let i = index"
+                    >
+                        <div>
+                            <div class="nutrition-details">
+                                <p>{{weeklyFlashSale.name}}</p>
+                                <p>{{weeklyFlashSale.value}}</p>
+                            </div>
+                            <hr class="nutrition-separation-line">
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

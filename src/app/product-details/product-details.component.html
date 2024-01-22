@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="sold-and-stock">
-                    <span class="sold">{{weeklyFlashSaleImages[id - 1].sold}} sold</span>
+                    <span class="sold">{{ weeklyFlashSaleImages[id - 1].sold | number:'1.0-0' }} sold</span>
                     <span class="stock-available" 
                         [ngStyle]="{
                             'color': stockAvailable === 'IN STOCK' ? '#3FC5C0' : 'red',

@@ -2,7 +2,7 @@
 @import 'swiper/css/pagination';
 
 html, body {
-    margin: 0px;
+    margin: 0;
 }
 
 .swiper-slide {
@@ -28,18 +28,18 @@ html, body {
     height: 40px;
     border-radius: 50%;
     color: #134A6C;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: none;
     background-color: white;
     box-shadow: 0px 1px 6px #00000029;
 }
 
 .swiper-button-next {
-    margin-right: 33px;
+    margin-right: 2rem;
 }
 
 .swiper-button-prev {
-    margin-left: 38px;
+    margin-left: 2.375rem;
 }
 
 .swiper-slide {

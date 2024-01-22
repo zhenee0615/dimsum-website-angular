@@ -7,7 +7,7 @@
             <p class="quantity-per-packet">{{weeklyFlashSaleImages[id - 1].quantityPerPacket}}pcs/packet</p>
             <p class="product-price">
                 <span class="original-price">RM {{weeklyFlashSaleImages[id - 1].price.toFixed(2)}}</span>
-                <span class="product-discount">RM {{(weeklyFlashSaleImages[id - 1].price - (weeklyFlashSaleImages[id - 1].price * weeklyFlashSaleImages[id - 1].discount)).toFixed(2)}}</span>
+                <span class="product-discount">RM {{getDiscountedPrice().toFixed(2)}}</span>
                 <span class="discount-percent">{{weeklyFlashSaleImages[id - 1].discount * 100}}% OFF</span>
             </p>
             <hr>

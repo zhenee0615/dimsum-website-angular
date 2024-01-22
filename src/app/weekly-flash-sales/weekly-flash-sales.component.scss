@@ -4,7 +4,7 @@
     align-items: center;
     vertical-align: middle;
     position: relative;
-    margin: 22px 0 17px 0;
+    margin: 1.37rem 0 1rem 0;
 }
 
 .product-list-title {
@@ -12,14 +12,14 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-family: 'Basic';
 }
 
 .product-list-title hr{
     border: 1px solid #C6C6C6;
     width: 180px;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .product-list-container button {
@@ -30,7 +30,7 @@
     border: 1px solid #3FC5C0;
     color: #134A6C;
     background-color: white;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Basic';
 }
 
@@ -42,7 +42,7 @@
 }
 
 .product-list-title p {
-    margin: 40px ;
+    margin: 2.5rem ;
 }
 
 .weekly-sales-image {
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .weekly-sale-swiper {
@@ -63,7 +63,7 @@
 }
 
 .product-name {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Basic';
     margin: 0;
     width: 255px;
@@ -73,7 +73,7 @@
 }
 
 .product-price {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Basic';
     margin: 0;
     color: #C6C6C6;
@@ -83,7 +83,7 @@
 .product-discount {
     margin: 0;
     font-family: 'Basic';
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .discount-percent {

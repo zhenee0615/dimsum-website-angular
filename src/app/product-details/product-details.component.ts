@@ -3,13 +3,14 @@ import { RouterModule } from '@angular/router';
 import { weeklyFlashSaleImages, socialMediaImages } from '../constant';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ProductDescriptionComponent } from '../product-description/product-description.component';
 
 @Component({
-    selector: 'app-product-details',
-    standalone: true,
-    imports: [RouterModule, CommonModule],
-    templateUrl: './product-details.component.html',
-    styleUrl: './product-details.component.scss'
+  selector: 'app-product-details',
+  standalone: true,
+  imports: [RouterModule, CommonModule, ProductDescriptionComponent],
+  templateUrl: './product-details.component.html',
+  styleUrl: './product-details.component.scss'
 })
 
 export class ProductDetailsComponent {

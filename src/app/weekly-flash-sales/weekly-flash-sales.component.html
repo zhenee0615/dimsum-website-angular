@@ -10,13 +10,15 @@
     <button class="swiper-button-prev">&lt;</button>
     <swiper class="weekly-sale-swiper" [config]="weeklySalesSwiper">
         <ng-template swiperSlide *ngFor="let weeklySalesImage of weeklyFlashSaleImages;">
-            <img class="weekly-sales-image" [src]="weeklySalesImage.path">
-            <p class="product-name">{{weeklySalesImage.name}}</p>
-            <p class="product-price">RM{{weeklySalesImage.price}}</p>
-            <p class="product-discount">
-                RM{{weeklySalesImage.price - (weeklySalesImage.price * weeklySalesImage.discount)}}
-                <span class="discount-percent">{{weeklySalesImage.discount * 100}}%</span>
-            </p>
+            <div routerLink="/product/{{weeklySalesImage.id}}" >
+                <img class="weekly-sales-image" [src]="weeklySalesImage.path">
+                <p class="product-name">{{weeklySalesImage.name}}</p>
+                <p class="product-price">RM{{weeklySalesImage.price | number:'1.2-2'}}</p>
+                <p class="product-discount">
+                    RM{{weeklySalesImage.price - (weeklySalesImage.price * weeklySalesImage.discount) | number:'1.2-2'}}
+                    <span class="discount-percent">{{weeklySalesImage.discount * 100}}%</span>
+                </p>
+            </div>
         </ng-template>
     </swiper>
     <button class="swiper-button-next">></button>

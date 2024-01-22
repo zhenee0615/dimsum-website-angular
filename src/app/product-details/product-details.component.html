@@ -1,0 +1,64 @@
+<div class="product-details-page">
+    <a routerLink="/home" class="back-button">Back</a>
+    <div class="product-display-container">
+        <img class="product-image" [src]="weeklyFlashSaleImages[id - 1].path" alt="image {{weeklyFlashSaleImages[id - 1].id}}">
+        <section class="top-right">
+            <p class="product-name">{{weeklyFlashSaleImages[id - 1].name}}</p>
+            <p class="quantity-per-packet">{{weeklyFlashSaleImages[id - 1].quantityPerPacket}}pcs/packet</p>
+            <p class="product-price">
+                <span class="original-price">RM {{weeklyFlashSaleImages[id - 1].price.toFixed(2)}}</span>
+                <span class="product-discount">RM {{getDiscountedPrice().toFixed(2)}}</span>
+                <span class="discount-percent">{{weeklyFlashSaleImages[id - 1].discount * 100}}% OFF</span>
+            </p>
+            <hr>
+        </section>
+        <section class="product-bottom-left">
+            <div class="additional-image-container">
+                <div *ngFor="let additionalImage of weeklyFlashSaleImages[id - 1].additionalImagePath;">
+                    <img [src]="additionalImage" class="additional-image" alt="">
+                </div>
+            </div>
+            <div class="social-media-logo-container">
+                <p>Share via</p>
+                <div *ngFor="let socialMediaLogo of socialMediaImages">
+                    <img [src]="socialMediaLogo.path" alt="{{socialMediaLogo.name}}" class="social-media-logo">
+                </div>
+            </div>
+        </section>
+        <section class="product-bottom-right">
+            <div class="quantity-and-stock">
+                <div>
+                    <p>Quantity: </p>
+                    <div class="quantity-selector">
+                        <button class="quantity-dec-btn" (click)="decQuantity()" 
+                            [ngStyle]="{
+                                'color': quantityNumber === 1 ? '#EBEBEB' : 'black'
+                            }" 
+                        >
+                            -
+                        </button>
+                        <input type="number" value="{{quantityNumber}}" class="quantity-input">
+                        <button class="quantity-inc-btn" (click)="incQuantity()">+</button>
+                    </div>
+                </div>
+                <div class="sold-and-stock">
+                    <span class="sold">{{ weeklyFlashSaleImages[id - 1].sold | number:'1.0-0' }} sold</span>
+                    <span class="stock-available" 
+                        [ngStyle]="{
+                            'color': stockAvailable === 'IN STOCK' ? '#3FC5C0' : 'red',
+                        }"
+                    >
+                        {{stockAvailable}}
+                    </span>
+                </div>
+            </div>
+            <div class="purchase-btn-container">
+                <button class="buy-now-btn">BUY NOW</button>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+                <span class="wishlist-btn">
+                    <img src="assets/Images/favourite_add.png" class="wishlist-icon">
+                </span>
+            </div>
+        </section>
+    </div>
+</div>

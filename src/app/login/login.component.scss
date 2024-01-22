@@ -7,18 +7,18 @@
 
 .ong-some-sale {
     width: 600px;
-    margin: 10px 120px;
+    margin: 0.625rem 7.5rem;
 }
 
 .loginpage {
     box-sizing: border-box;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 form, .register-section {
-    margin: 15px 120px 10px 0px;
+    margin: 1rem 7.5rem 0.625rem 0px;
     background-color: white;
-    padding: 10px 35px;
+    padding: 0.625rem 2.18rem;
     border-radius: 10px;
 }
 
@@ -32,11 +32,11 @@ form {
 
 .credentials {
     width: 295px;
-    font-size: 15px;
+    font-size: 1rem;
     display: block;
-    margin: 25px 0px;
+    margin: 1.56rem 0;
     height: 38px;
-    padding-left: 13px;
+    padding-left: 0.81rem;
     border-radius: 6px;
     border: 1.5px solid #dedede;
 }
@@ -47,18 +47,18 @@ form {
 }
 
 .login-button {
-    padding: 13px 42px;
-    font-size: 13px;
+    padding: 0.81rem 2.625rem;
+    font-size: 0.81rem;
     border: none;
     border-radius: 4px;
     background-color: #3fc5c0;
     color: white;
-    margin: 7px 30px 15px 0px;
+    margin: 0.5rem 1.87rem 1rem 0;
     font-family: "Basic";
 }
 
 .forgot-pw:link {
-    font-size: 13px;
+    font-size: 0.81rem;
     color: #9d9d9d;
     text-decoration: none;
     font-family: "Basic";
@@ -73,14 +73,14 @@ form {
 }
 
 .title {
-    font-size: 25px;
+    font-size: 1.56rem;
     font-family: "Basic";
 }
 
 .or-login-with {
-    font-size: 13px;
+    font-size: 0.81rem;
     color: #9d9d9d;
-    margin: 15px 0px;
+    margin: 1rem 0;
     font-family: "Coda";
 }
 
@@ -96,11 +96,11 @@ form {
     width: 311px;
     height: 40px;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 1.56rem;
 }
 
 .facebook-button {
-    margin-right: 15px;
+    margin-right: 1rem;
     background-color: #395796;
     border: none;
     border-radius: 2px;
@@ -116,7 +116,7 @@ form {
 
 .fb-logo, .google-logo {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 0.62rem;
 }
 
 .hide-and-reveal-pw {
@@ -133,22 +133,22 @@ form {
 .subtitle {
     width: 313px;
     font-family: "Basic";
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .enjoy-text {
     color: #CE1C75;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .register-button {
     background-color: #CE1C75;
-    padding: 13px 25px;
+    padding: 0.81rem 1.56rem;
     font-family: "Basic";
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 14px;
-    margin: 0px 0px 15px 0px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
 }

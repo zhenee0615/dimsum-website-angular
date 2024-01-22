@@ -14,24 +14,24 @@ footer {
 }
 
 .company-footer-logo {
-    margin: 30px 0 0 95px;
+    margin: 2rem 0 0 6rem;
     height: 40px;
 }
 
 .copyright {
     font-family: 'Coda';
-    font-size: 13px;
-    margin-left: 95px;
+    font-size: 0.8rem;
+    margin-left: 6rem;
 }
 
 .contact {
     font-family: 'Basic';
-    font-size: 15px;
-    margin: 50px 0 0 95px;
+    font-size: 1rem;
+    margin: 3.1rem 0 0 6rem;
 }
 
 .social-media {
-    margin: 15px 0 0 95px;
+    margin: 1rem 0 0 6rem;
     display: flex;
     justify-content: space-between;
     width: 125px;
@@ -49,27 +49,27 @@ footer {
     text-align: left;
     align-items: flex-start;
     align-content: space-between;
-    margin-right: 80px;
+    margin-right: 5rem;
     background-color: white;
 }
 
 .footer-section p {
     font-family: "Basic";
-    font-size: 16px;
-    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-bottom: 1.56rem;
 }
 
 .footer-section a {
     text-decoration: none;
     color: black;
     font-family: 'Coda';
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .footer-right-section {
     justify-content: space-between;
     width: 715px;
     display: flex;
-    margin-top: 12px;
+    margin-top: 0.75rem;
 }

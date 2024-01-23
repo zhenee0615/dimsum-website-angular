@@ -17,15 +17,17 @@ export class LoginComponent {
 	images = ["/assets/Images/password_hide.png", "/assets/Images/password_reveal.png"];
 	image = this.images[0];
 	validated = false;
+	showPassword = false;
 	name = '';
 	user = [
 		{name: 'Jun', email: "jun+2@agmostudio.com", password: "12#$qwER"}
-	]
+	];
 
 	constructor(private router: Router, public dialog: MatDialog) {}
 
 	viewPW() {
 		this.image = (this.image == this.images[0]) ? this.images[1] : this.images[0];
+		this.showPassword = !this.showPassword;
 	}
 
 	loginForm = new FormGroup({

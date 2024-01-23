@@ -18,7 +18,7 @@
 form, .register-section {
     margin: 1rem 7.5rem 0.625rem 0px;
     background-color: white;
-    padding: 0.625rem 2.18rem;
+    padding: 1.5rem 2.18rem;
     border-radius: 10px;
 }
 
@@ -90,28 +90,26 @@ form {
     justify-content: center;
     align-items: center;
     font-family: "Basic";
+    border-radius: 4px;
+    color: white;
 }
 
 .social-media-btn {
     width: 311px;
     height: 40px;
     display: flex;
-    margin-bottom: 1.56rem;
+    margin-bottom: 1rem;
 }
 
 .facebook-button {
     margin-right: 1rem;
     background-color: #395796;
     border: none;
-    border-radius: 2px;
-    color: white;
 }
 
 .google-button {
     background-color: #3b82ef;
     border: none;
-    border-radius: 2px;
-    color: white;
 }
 
 .fb-logo, .google-logo {
@@ -150,5 +148,11 @@ form {
     border: none;
     border-radius: 4px;
     font-size: 0.875rem;
-    margin-bottom: 1rem;
+}
+
+.login-button:hover, 
+.register-button:hover, 
+.facebook-button:hover, 
+.google-button:hover {
+    cursor: pointer;
 }

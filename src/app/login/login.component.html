@@ -3,26 +3,62 @@
         <img src="/assets/Images/loginPage_sale.png" alt="Login Page Mega Sale" class="ong-some-sale" />
     </div>
     <div class="loginpage">
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-upper">
                 <h2 class="title">Welcome to Xinn Holding!</h2>
-                <input type="text" placeholder="Email Address" class="credentials" />
+                <input formControlName="email" type="email" placeholder="Email Address" class="credentials" />
+                <div 
+                    *ngIf="loginForm.controls.email.invalid && 
+                    (loginForm.controls.email.dirty || 
+                    loginForm.controls.email.touched)"
+                >
+                    <small class="error-message" *ngIf="loginForm.get('email')?.hasError('required')">
+                        &#10060; Email is required.
+                    </small>
+                    <small class="error-message" *ngIf="loginForm.get('email')?.hasError('pattern')">
+                        &#10060; Incorrect email format.
+                    </small>
+                </div>
                 <div class="pw">
                     <img [src]="image" alt="Hide and Reveal the Password" class="hide-and-reveal-pw" (click)="viewPW()" />
-                    <input type="text" placeholder="Password" class="credentials" />
+                    <input formControlName="password" type="password" placeholder="Password" class="credentials" />
+                    <div 
+                        *ngIf="loginForm.controls.password.invalid && 
+                        (loginForm.controls.password.dirty || 
+                        loginForm.controls.password.touched)"
+                    >
+                        <small class="error-message" *ngIf="loginForm.get('password')?.hasError('required')">
+                            &#10060; Password is required.<br>
+                        </small>
+                        <small class="error-message" *ngIf="loginForm.get('password')?.hasError('minlength')">
+                            &#10060; Password must be at least 8 characters.<br>
+                        </small>
+                        <small class="error-message" *ngIf="loginForm.get('password')?.hasError('noDigit')">
+                            &#10060; Password must contains at least one number.<br>
+                        </small>
+                        <small class="error-message" *ngIf="loginForm.get('password')?.hasError('noLowerCase')">
+                            &#10060; Password must contains at least one lowercase.<br>
+                        </small>
+                        <small class="error-message" *ngIf="loginForm.get('password')?.hasError('noUpperCase')">
+                            &#10060; Password must contains at least one uppercase.
+                        </small>
+                    </div>
                 </div>
             </div>
             <div>
                 <button class="login-button" type="submit">LOG IN</button>
                 <a class="forgot-pw" href="#">Forgot Password?</a>
             </div>
+            <div *ngIf="">
+
+            </div>
             <p class="or-login-with" >Or Log In With</p>
             <div class="social-media-btn">
-                <button class="facebook-button" type="submit">
+                <button class="facebook-button" type="button">
                     <img src="/assets/Images/login_facebook@2x.png" alt="Facebook Button" class="fb-logo" />
                     Facebook
                 </button>
-                <button class="google-button" type="submit">
+                <button class="google-button" type="button">
                     <img src="/assets/Images/login_google.png" alt="Google Button" class="google-logo" />
                     Google
                 </button>
@@ -35,4 +71,4 @@
             <button class="register-button" type="submit">REGISTER FOR FREE NOW</button>
         </div>
     </div>
-  </div>
+</div>

@@ -1,0 +1,14 @@
+<div *ngIf="data.validated === true">
+    <h1 mat-dialog-title>Login Successful!</h1>
+    <div mat-dialog-content>Welcome back, {{data.name}}!</div>
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>Close</button>
+    </div>
+</div>
+<div *ngIf="data.validated === false">
+    <h1 mat-dialog-title>Login Fail!</h1>
+    <div mat-dialog-content>Your Email Address or Password is incorrect, please try again.</div>
+    <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>Close</button>
+    </div>
+</div>

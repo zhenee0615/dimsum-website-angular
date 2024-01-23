@@ -1,7 +1,7 @@
 <div class="product-details-page">
     <a routerLink="/home" class="back-button">Back</a>
     <div class="product-display-container">
-        <img class="product-image" [src]="weeklyFlashSaleImages[id - 1].path" alt="image {{weeklyFlashSaleImages[id - 1].id}}">
+        <img class="product-image" [src]="imagePath" alt="image {{weeklyFlashSaleImages[id - 1].id}}">
         <section class="top-right">
             <p class="product-name">{{weeklyFlashSaleImages[id - 1].name}}</p>
             <p class="quantity-per-packet">{{weeklyFlashSaleImages[id - 1].quantityPerPacket}}pcs/packet</p>
@@ -15,7 +15,14 @@
         <section class="product-bottom-left">
             <div class="additional-image-container">
                 <div *ngFor="let additionalImage of weeklyFlashSaleImages[id - 1].additionalImagePath;">
-                    <img [src]="additionalImage" class="additional-image" alt="">
+                    <img 
+                        [src]="additionalImage" 
+                        class="additional-image" 
+                        (click)="changeImage(additionalImage)"
+                        [ngStyle]="{
+                            border: additionalImage === imagePath ? '2px solid #3FC5C0' : 'none'
+                        }"
+                    >
                 </div>
             </div>
             <div class="social-media-logo-container">
@@ -38,7 +45,10 @@
                             -
                         </button>
                         <input type="number" value="{{quantityNumber}}" class="quantity-input">
-                        <button class="quantity-inc-btn" (click)="incQuantity()">+</button>
+                        <button class="quantity-inc-btn" (click)="incQuantity()" [disabled]="addLimit"
+                        [ngStyle]="{
+                            'color': addLimit ? '#EBEBEB' : 'black'
+                        }" >+</button>
                     </div>
                 </div>
                 <div class="sold-and-stock">

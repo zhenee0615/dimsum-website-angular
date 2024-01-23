@@ -1,7 +1,7 @@
 header {
     display: inline-block;
     width: 100%;
-    height: 125px;
+    height: 133px;
     top: 0;
 }
 
@@ -34,14 +34,17 @@ nav {
     font-family: "Basic";
     color: white;
     text-decoration: none;
+    font-size: 0.875rem;
+    text-wrap: nowrap;
 }
 
 nav li span {
     position: relative;
     font-family: "Coda";
     font-size: 0.8rem;
-    left: -3px;
+    left: -0.1875rem;
     margin-right: 0.5rem;
+    overflow: hidden;
 }
 
 .blog {
@@ -49,15 +52,20 @@ nav li span {
     margin-left: 1rem;
 }
 
+.about-and-outlets {
+    display: -webkit-inline-box;
+}
+
 .bottom-header {
     background-color: white;
     display: inline-flex;
     width: 100%;
     height: 90px;
+    border-bottom: 8px solid #E9F1F4;
 }
 
 .company-logo {
-    margin: 2rem 0 2.5rem 6rem;
+    margin: 1rem 0 2.5rem 6rem;
     height: 40px
 }
 
@@ -67,6 +75,17 @@ nav li span {
     border: 1px solid #EBEBEB;
     border-radius: 6px;
     position: absolute;
+    padding-left: 1rem;
+}
+
+.search-input::placeholder {
+    font-family: 'Coda';
+    font-size: 0.875rem;
+    color: #888888;
+}
+
+.search-input:focus {
+    outline: none;
 }
 
 .search-icon {
@@ -85,6 +104,17 @@ nav li span {
     border-radius: 0 6px 6px 0;
     align-items: center;
     left: 24.3rem;
+}
+
+.search-btn:hover, 
+.search-icon:hover,
+.cart-icon:hover,
+.delivery-section:hover,
+.blog:hover,
+.about:hover,
+.outlet:hover, 
+.company-logo:hover {
+    cursor: pointer;
 }
 
 .search-btn-section {

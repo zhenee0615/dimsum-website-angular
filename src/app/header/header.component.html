@@ -3,11 +3,13 @@
         <a routerLink="/home" class="home" >Home</a>
         <a routerLink="/login" class="login-btn">Register for FREE</a>
         <li class="blog"><span>Blog</span></li>
-        <li><span>About</span></li>
-        <li><span>Outlets</span></li>
+        <div class="about-and-outlets">
+            <li><span class="about">About</span></li>
+            <li><span class="outlet">Outlets</span></li>
+        </div>
     </nav>
     <div class="bottom-header">
-        <img src="assets/Images/logo.png" class="company-logo">
+        <img routerLink="/home" src="assets/Images/logo.png" class="company-logo">
         <form class="search-form">
             <input type="search" class="search-input" placeholder="Dim Sum">
             <div class="search-btn-section">

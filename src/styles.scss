@@ -55,17 +55,28 @@ html, body {
 }
 
 .mdc-tab {
-    font-size: 1.12rem !important;
+    font-size: 1.125rem !important;
     font-family: 'Basic' !important;
-    width: 151px !important;
-    height: 54px !important;
-    border-radius: 35px;
+    border-radius: 2.18rem;
+    padding: 1rem;
+    color: black !important;
 }
 
 .mdc-tab--active {
     background-color: #C6EBE0 !important;
+    color: black !important;
 }
 
 .mat-mdc-tab-body {
     margin-top: 1.2rem;
+}
+
+.mat-mdc-tab-group {
+    --mat-tab-header-active-label-text-color: black !important;
+    --mat-tab-header-inactive-label-text-color: black !important;
+    --mat-tab-header-active-hover-label-text-color: black !important;
+    --mat-tab-header-active-focus-label-text-color: black !important;
+    --mat-tab-header-inactive-hover-label-text-color: black !important;
+    --mat-tab-header-active-ripple-color: none !important;
+    --mat-tab-header-inactive-ripple-color: none !important;
 }

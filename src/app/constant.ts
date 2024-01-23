@@ -1,5 +1,7 @@
 import { SwiperOptions } from 'swiper';
 
+export const emailValidation = '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.com';
+
 export const bannerImages = [
     { id: 1, path: "assets/Images/cnyOfferBanner.jpg" },
     { id: 2, path: "assets/Images/dimsumBanner.jpg" },

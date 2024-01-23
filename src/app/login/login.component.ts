@@ -4,6 +4,7 @@ import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule, A
 import { Router } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { LoginDialogComponent } from '../login-dialog/login-dialog.component';
+import { emailValidation } from '../constant';
 
 @Component({
 	selector: 'app-login',
@@ -33,7 +34,7 @@ export class LoginComponent {
 	loginForm = new FormGroup({
         email: new FormControl('', [
             Validators.required, 
-			Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.com'),
+			Validators.pattern(emailValidation),
 			Validators.minLength(5)
         ]),
         password: new FormControl('', [

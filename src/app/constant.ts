@@ -10,7 +10,7 @@ export const bannerImages = [
 
 export const bannerSwiper: SwiperOptions = {
     slidesPerView: 1,
-    navigation: true,
+    navigation: false,
     autoplay: { delay: 1500, disableOnInteraction: false },
     pagination: { 
         el: ".swiper-pagination",
